@@ -13,5 +13,5 @@ pip install cve
 
 ## 使用
 
-![screenshot.png](screenshot.png)
+![screenshot.png](https://i.loli.net/2018/11/08/5be310f66c970.png)
 
