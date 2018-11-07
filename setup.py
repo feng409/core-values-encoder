@@ -1,11 +1,9 @@
-from distutils.core import setup
-import cve
+from setuptools import setup
 
 setup(
-    # py_modules=['cve.society'],
-    py_modules=['cve.society', 'cve.society2', 'cve.society3'],
+    packages=['cve'],
     name='cve',
-    entry_points={'console_scripts': ['society=cve.command:main']},
+    entry_points={'console_scripts': ['cve=cve.command:main']},
     version='0.1',
     description='core socialist values encoding',
     author='chemf',

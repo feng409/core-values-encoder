@@ -26,10 +26,16 @@ def main():
 
     args = parse.parse_args()
     if args.operation == 'encode':
-        print(core_value_encode(args.source))
+        output = core_value_encode(args.source)
     else:
-        print(core_value_decode(args.source))
+        output = core_value_decode(args.source)
+
+    if sys.version_info[0] == 2:
+        output = output.encode('utf-8')
+
+    print(output)
 
 
 if __name__ == '__main__':
     main()
+
